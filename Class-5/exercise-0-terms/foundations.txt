@@ -1,0 +1,4 @@
+1) Data types are categories of information such as texts or numbers
+2) Operatorrs are used for coding.
+3) Conditional statements are a test that runs to see if a data matches the code and make a decisopn based on that.
+4) Loops are codes that allow codes to repeat. 
