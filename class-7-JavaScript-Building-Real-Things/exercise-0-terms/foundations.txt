@@ -1,0 +1,2 @@
+1) The DOM is short for 'document object model.' It is a code that allows you to easily access something.
+2) Event listeners is a code that adds an event to a certain object

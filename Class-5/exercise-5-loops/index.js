@@ -1,4 +1,4 @@
-let name = "james";
+
 let people = [
     {
       name: "james",
@@ -15,9 +15,9 @@ let people = [
   ]
 
 
-  if ( name === "John"){
+  if ( people.name === "John"){
     console.log("I found John!");
-  }else if ( name === "Jane") {
+  }else if ( people.name === "Jane") {
     console.log("Hey Jane, do you know where John is?");
   }else {
     console.log("Hey do you happen to know someone by the name of John?");

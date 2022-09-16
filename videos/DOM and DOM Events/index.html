@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <button class="btn btn-danger" onclick="goCoocoo">
+            Go Coocoo
+        </button>
+    </div>
+
+
+   <div class="jumbotron text-center">
+        <button class="btn btn-danger coffee-btn" onclick="goCoocoo()">
+            Get Coffee
+        </button>
+        <button class="btn btn-danger coffee-btn" onclick="goCoocoo()">
+            Get Coffee
+        </button>
+        <button class="btn btn-danger coffee-btn" onclick="goCoocoo()">
+            Get Coffee
+        </button>
+   </div>
+
+   <div class="jumbotron text-center">
+    <button class="btn btn-primary lala-btn">
+        Not Listening 
+    </button>
+    </div>
+
+    <script>    
+        function goCoocoo() {
+            document.body.style.backgroundColor = '#C00C00';
+        }
+
+
+        const coffeeButton = document.querySelector('.coffee-btn');
+       // coffeeButton.onclick = function() {
+       //     document.body.style.backgroundColor = '#COFFEE';
+        //}
+        //coffeeButton.onmouseenter = goCoocoo;
+        coffeeButtons.forEach(function(button) {
+            button.onclick = getCoffee;
+        });
+            
+        const lalaButton = document.querySelector('.lala-btn');
+
+        function notListening() {
+            document.body.style.backgroundColor = '#1A1A1A';
+        }
+
+        lalaButton.addEventListener('click', notListening);
+        lalaButton.addEventListener('mouseenter', notListening);
+
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => button.addEventListener ('mouseleave', notListening));
+    </script>
+
+</body>
+</html>
