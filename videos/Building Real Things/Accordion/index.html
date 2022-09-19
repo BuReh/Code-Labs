@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         body, .jumbotron { padding: 30px;}
+        html {
+            overflow-y: scroll;
+        }
         body {
             background: #EFEFEF;
         }
@@ -95,13 +98,22 @@
 
     <script>
         const accordion = document.querySelector('.accordion');
-        const items = accordion.querySelectoALl('li');
+        const items = accordion.querySelectorAll('li');
         const questions = accordion.querySelectorAll('.question');
 
         function toggleAccordion() {
             const thisItem = this.parentNode;
-            console.log(this.parentNode);
-            thisItem.classList.toggle('open');
+
+            items.forEach(item => {
+                if (thisItem == item){
+                    thisItem.classList.toggle('open');
+                    return;
+                }
+
+                item.classList.remove('open');
+            })
+            
+            
         }
 
         questions.forEach(question => question.addEventListener('click', toggleAccordion));
