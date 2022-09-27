@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./api.js"></script>
+    <script>
+        function addElement() {
+            let text;
+            text = document.getElementById('idk').innerHTML = "John's Blog Website";
+        }
+    </script>
 </head>
 <body>
-    <button onclick="something()">Things to do</button>
-    <p id="things"></p>
-    
+    <button onclick="addElement()">Blog</button>
+    <h1 id="idk"></h1>
 </body>
 </html>

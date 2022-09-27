@@ -1,0 +1,16 @@
+A smart door that greets people who belong there and drives away who doesnt
+
+If (person name) belongs to of a teacher catgory, then it would reply something like 'Hello Mr/Ms (name).'
+Else if (person name) belongs to of a student category, then it would say 'Hello, student (name).'
+Else it would say 'Please leave the premise' to those who aren't part of the building.
+Ex:
+<Script>
+
+    if (name = (teachername)){
+        'Hello, Mr/Ms (name)'
+    }else if (name = (studentname)) {
+        'Hello, student (name)'
+    }else {                           //these are for those who are not in the database and are not supposed to be there.
+        'Please leave the premise'   
+    }       
+</Script>
