@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="red"></div>
+    <button onclick="redSquare()">Red</button>
+    <script>
+       
+        function square(){
+            let sq = document.getElementById('red');
+            let sq2 = document.createElement('div');
+            sq2.style.backgroundColor = 'red';
+            sq2.style.width = "200px";
+            sq2.style.height = "200px";
+            sq2.style.marginBottom = "10px";
+
+            sq.appendChild(sq2);
+        }
+        function redSquare(){
+            setInterval(square, 1000);
+        }
+    </script>
+</body>
+</html>

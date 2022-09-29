@@ -7,17 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="text">Click me to change the color of this text!</h1>
     <script>
-        function add(a, b) {
-            return a + b; 
-        };
-        
-        function log(value) {
-           console.log(add(10,10));
-        };
-        log();
-        
-       
+        document.getElementById('text').addEventListener("click",function(){document.getElementById('text').style.color= 'red'})
     </script>
 </body>
 </html>

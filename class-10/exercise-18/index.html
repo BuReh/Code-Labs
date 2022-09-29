@@ -7,17 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="btn">log</button>
     <script>
-        function add(a, b) {
-            return a + b; 
-        };
-        
-        function log(value) {
-           console.log(add(10,10));
-        };
-        log();
-        
-       
+        document.getElementById('btn').addEventListener("click",function(){console.log('clicked')});
     </script>
 </body>
 </html>
