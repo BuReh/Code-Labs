@@ -8,12 +8,14 @@
 </head>
 <body>
     <script>
-        let str = "'Here's Johnny!' is a famous movie line from...";
-        function capitalizeEachWord(sentence) {
-            str = str.toUpperCase();
-            console.log(str);
+        let num = "1010101";
+        function countZeros(num){
+            let num2;
+            num2 = num.match(/0/g);
+            console.log(num2.length);
         }
-        capitalizeEachWord(str);
+        countZeros(num);
     </script>
+    
 </body>
 </html>
