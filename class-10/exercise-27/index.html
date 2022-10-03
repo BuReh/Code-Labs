@@ -9,12 +9,22 @@
 <body>
     <script>
         function sumFinder(arr, sum){
-           
             
+            for(let i = 0; i < 20; i++){
+                let number = Math.random()*6;
+                number = Math.floor(number);
+                let number2 = Math.random()*6;
+                number2 = Math.floor(number2);
+                if((arr[number]+arr[number2])==sum){
+                console.log(arr[number] + '+' + arr[number2]);
+                };
+            }
+           
         }
 
         sumFinder([6,4,3,2,1,7], 9); // true
         sumFinder([6,4,3,2,1,7], 2); // false
+        
     </script>
 </body>
 </html>
