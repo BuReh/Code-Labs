@@ -1,13 +1,19 @@
-var animal = /** @class */ (function () {
-    function animal(theName, theAge, thelocation) {
-        this.name = theName;
-        this.age = theAge;
-        this.location = thelocation;
+var Animal = /** @class */ (function () {
+    function Animal() {
+        this.name = '';
+        this.age = 0;
+        this.region = '';
     }
-    animal.prototype.something = function () {
-        console.log(this.name + ' is ' + this.age + ' years old and is from ' + this.location);
-    };
-    return animal;
+    return Animal;
 }());
-var ani = new animal("Johnny the Lion", 5, "Africa");
-ani.something();
+var Region = /** @class */ (function () {
+    function Region() {
+        this.name = "Africa";
+    }
+    return Region;
+}());
+var animal = new Animal();
+animal.name = "Johnny the Lion";
+animal.age = 5;
+animal.region = "Africa";
+console.log(animal);

@@ -1,17 +1,18 @@
-class animal {
-    name:string;
-    age: number;
-    location:string;
-     constructor(theName:string,theAge:number,thelocation:string){
-        this.name = theName;
-        this.age = theAge;
-        this.location = thelocation;
-     }
-     something(){
-        console.log( this.name+ ' is ' +this.age +' years old and is from '+this.location)
-     }
+class Animal {
+   name: string = '';
+   age: number = 0;
+   region: string = '';
+    
+   
    
 }
+class Region{
+   name: string = "Africa";
+}
 
-let ani = new animal("Johnny the Lion", 5, "Africa");
-ani.something()
+let animal = new Animal();
+animal.name = "Johnny the Lion";
+animal.age = 5;
+animal.region = "Africa";
+
+console.log(animal);
